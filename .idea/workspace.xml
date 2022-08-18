@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b398f95f-7657-4cd0-8345-4062802b4e4f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/youssfbr/db/ConnectionJDBCSB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/youssfbr/db/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/youssfbr/db/AlunoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/youssfbr/db/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/youssfbr/db/QueriesExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/connection.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +36,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DVAfsaELwEbm3qBFI4omRcK5rv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +50,12 @@
     "last_opened_file_path": "C:/workspace/spring/2022/studies/estudo_db"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ConnectionJDBCSB">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.youssfbr.db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.QueriesExecution">
     <configuration name="ConnectionJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.youssfbr.db.ConnectionJDBC" />
       <module name="estudo_db.main" />
@@ -71,8 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QueriesExecution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.youssfbr.db.QueriesExecution" />
+      <module name="estudo_db.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.youssfbr.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueriesExecution" />
         <item itemvalue="Application.ConnectionJDBCSB" />
         <item itemvalue="Application.ConnectionJDBC" />
       </list>
