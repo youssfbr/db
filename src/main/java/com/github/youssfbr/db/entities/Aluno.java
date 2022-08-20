@@ -1,26 +1,35 @@
-package com.github.youssfbr.db;
+package com.github.youssfbr.db.entities;
 
+import javax.persistence.*;
+
+@Entity
 public class Aluno {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
+
+    @Column(nullable = false)
     private String nome;
+
+    @Column(nullable = false)
     private int idade;
-    private String estado;
 
-    public Aluno(int id, String nome, int idade, String estado) {
-        this.id = id;
-        this.nome = nome;
-        this.idade = idade;
-        this.estado = estado;
-    }
-
-    public Aluno(String nome, int idade, String estado) {
-        this.nome = nome;
-        this.idade = idade;
-        this.estado = estado;
-    }
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Estado estado;
 
     public Aluno() { }
+
+    public Aluno(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public Aluno(String nome, int idade, Estado estado) {
+        this.nome = nome;
+        this.idade = idade;
+        this.estado = estado;
+    }
 
     public int getId() {
         return id;
@@ -46,23 +55,22 @@ public class Aluno {
         this.idade = idade;
     }
 
-    public String getEstado() {
+    public Estado getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(Estado estado) {
         this.estado = estado;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Aluno{");
-        sb.append("id=").append(id);
-        sb.append(", nome='").append(nome).append('\'');
-        sb.append(", idade=").append(idade);
-        sb.append(", estado='").append(estado).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "Aluno{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", estado=" + estado +
+                '}';
     }
 
 }
